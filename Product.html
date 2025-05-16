@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyStore</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-
-  <body class="font-sans bg-gray-100">
-    <header class="sticky top-0 z-50 bg-white shadow-md">
+</head>
+<body>
+<header class="sticky top-0 z-50 bg-white shadow-md">
      
         <nav
           class="container mx-auto px-4 py-4 flex justify-between items-center flex-wrap"
@@ -38,39 +37,9 @@
       
     </header>
 
-    <main class="container mx-auto mt-8 px-4 py-8">
-      <div
-        class="relative w-full h-64 bg-center bg-cover rounded-lg overflow-hidden mb-8"
-      >
-        <div
-          class="absolute inset-0 bg-[url('Img/amazon.jpg')] bg-cover bg-center transition-opacity duration-1000 opacity-100 slider-image"
-        ></div>
-        <div
-          class="absolute inset-0 bg-[url('Img/amazon1.jpg')] bg-cover bg-center transition-opacity duration-1000 opacity-0 slider-image"
-        ></div>
-        <div
-          class="absolute inset-0 bg-[url('Img/amazon2.jpg')] bg-cover bg-center transition-opacity duration-1000 opacity-0 slider-image"
-        ></div>
+    <main><section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
 
-        <div
-          class="absolute top-1/2 left-0 transform -translate-y-1/2 px-4 py-2 cursor-pointer text-2xl text-black z-10 hover:scale-125 transition duration-3000"
-          onclick="moveSlide(-1)"
-        >
-          &#10094;
-        </div>
-        <div
-          class="absolute top-1/2 right-0 transform -translate-y-1/2 px-4 py-2 cursor-pointer text-2xl text-black z-10 hover:scale-125 transition duration-3000"
-          onclick="moveSlide(1)"
-        >
-          &#10095;
-        </div>
-      </div>
-
-      <section class="mb-12">
-        <h3 class="text-2xl font-bold text-indigo-600 mb-4">Electronics</h3>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div class="bg-white p-4 rounded-lg shadows-lg">
+        <div class="bg-white p-4 rounded-lg shadows-lg">
             <img
               src="Img/Product.avif"
               alt="product1"
@@ -106,29 +75,6 @@
             </div>
           </div>
 
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="mb-12">
-        <h3 class="text-2xl font-bold text-indigo-600 mb-4">Technology</h3>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div class="bg-white p-4 rounded-lg shadows-lg">
             <img
               src="Img/Product.avif"
@@ -182,30 +128,7 @@
               </button>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="mb-12">
-        <h3 class="text-2xl font-bold text-indigo-600 mb-4">Clothing</h3>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
 
           <div class="bg-white p-4 rounded-lg shadows-lg">
             <img
@@ -225,49 +148,6 @@
             </div>
           </div>
 
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="mb-12">
-        <h3 class="text-2xl font-bold text-indigo-600 mb-4">
-          Kitchen Equipment
-        </h3>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
 
           <div class="bg-white p-4 rounded-lg shadows-lg">
             <img
@@ -287,6 +167,7 @@
             </div>
           </div>
 
+
           <div class="bg-white p-4 rounded-lg shadows-lg">
             <img
               src="Img/Product.avif"
@@ -304,10 +185,242 @@
               </button>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer>Copyright all Rights reseverd</footer>
-    <script src="Js/slider.js"></script>
-  </body>
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+          <div class="bg-white p-4 rounded-lg shadows-lg">
+            <img
+              src="Img/Product.avif"
+              alt="product1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
+            <p class="text-gray-600">Product Description</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+
+
+
+    </section></main>
+
+    
+</body>
 </html>
