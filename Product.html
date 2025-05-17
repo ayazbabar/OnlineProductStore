@@ -1,338 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-<header class="sticky top-0 z-50 bg-white shadow-md">
-     
-        <nav
-          class="container mx-auto px-4 py-4 flex justify-between items-center flex-wrap"
-        >
-          <div class="flex items-center space-x-4 flex-shrink-0">
-            <div class="text-2xl font-bold text-indigo-600">MyStore</div>
-            <div class="flex items-center w-ful max-w-md sm:w-auto">
-              <input
-                type="text"
-                class="flex-grow lg:w-96 rounded-l-lg bg-gray-300 px-3 py-1 focus:outline-none"
-                placeholder="Search"
-              />
-              <button
-                class="w-12 sm:w-16 border-none rounded-r-lg bg-indigo-500 px-2 py-1 hover:bg-indigo-600"
-              >
-                🔍︎
-              </button>
-            </div>
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <nav
+        class="container mx-auto px-4 py-4 flex justify-between items-center flex-wrap"
+      >
+        <div class="flex items-center space-x-4 flex-shrink-0">
+          <div class="text-2xl font-bold text-indigo-600">MyStore</div>
+          <div class="flex items-center w-full max-w-md sm:w-auto">
+            <input
+              type="text"
+              class="flex-grow lg:w-96 rounded-l-lg bg-gray-300 px-3 py-1 focus:outline-none"
+              placeholder="Search"
+            />
+            <button
+              class="w-12 sm:w-16 border-none rounded-r-lg bg-indigo-500 px-2 py-1 hover:bg-indigo-600"
+            >
+              🔍︎
+            </button>
           </div>
+        </div>
 
-          <ul class="flex flex-wrap space-x-6 text-gray-700 font-medium mt-4 sm:mt-0">
-            <li><a href="index.html" class="hover:text-indigo-600">Home</a></li>
-            <li><a href="Product.html" class="hover:text-indigo-600">Products</a></li>
-            <li><a href="#" class="hover:text-indigo-600">Cart🛒</a></li>
-          </ul>
-        </nav>
-      
+        <ul
+          class="flex flex-wrap space-x-6 text-gray-700 font-medium mt-4 sm:mt-0"
+        >
+          <li><a href="index.html" class="hover:text-indigo-600">Home</a></li>
+          <li>
+            <a href="Product.html" class="hover:text-indigo-600">Products</a>
+          </li>
+          <li><a href="#" class="hover:text-indigo-600">Cart🛒</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main><section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+    <main>
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
+      >
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
+          <img
+            src="Img/1.webp"
+            alt="product1"
+            class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
+          />
+          <h3 class="text-xl font-semibold text-gray-800">Gaming PC</h3>
+          <p class="text-gray-600">
+            Gaming PC with Ryzen 7 7700 and RTX 4070 Ti Super
+          </p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-lg font-bold text-indigo-600">Rs.407,000.00</span>
+            <button
+              class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
 
-        <div class="bg-white p-4 rounded-lg shadows-lg">
+        <article
+  class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer"
+>
+  <img
+    src="Img/2.jpg"
+    alt="Asus ROG Switft PG27AQDM 27 OLED Monitor"
+    class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
+  />
+  <h3 class="text-xl font-semibold text-gray-800">
+    Asus ROG Switft PG27AQDM 27 OLED Monitor
+  </h3>
+  <p class="text-gray-600 line-clamp-3">
+    27-inch (26.5-inch viewable) 1440p OLED panel, 240 Hz, 0.03ms response,
+    G-SYNC® compatible, anti-glare, custom heatsink, intelligent voltage
+    optimization, uniform brightness, DisplayWidget Center
+  </p>
+  <div class="mt-4 flex justify-between items-center">
+    <span class="text-lg font-bold text-indigo-600">Rs.290,000.00</span>
+    <button
+      class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+      aria-label="Add Asus ROG Monitor to cart"
+    >
+      Add to Cart
+    </button>
+  </div>
+</article>
+
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
+          <img
+            src="Img/3.webp"
+            alt="product1"
+            class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
+          />
+          <h3 class="text-xl font-semibold font-gray-800">Acer Nitro V15</h3>
+          <p class="text-gray-600 line-clamp-3">
+            The Acer Nitro V 15 offers the perfect blend of gaming power and
+            portability. With up to an Intel® Core™ 7 processor and GeForce RTX™
+            4050 graphics, it’s built for seamless multitasking and fast-paced
+            gaming
+          </p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-lg font-bold text-indigo-600">Rs.229,999.00</span>
+            <button
+              class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
+          <img
+            src="Img/iphone 16 pro max.jpg"
+            alt="product1"
+            class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
+          />
+          <h3 class="text-xl font-semibold font-gray-800">
+            I Phone 16 Pro Max
+          </h3>
+          <p class="text-gray-600 line-clamp-3">
+            iPhone 16 Pro Max – Crafted with titanium, powered by the
+            lightning-fast A18 Pro chip. Stunning 6.9" Super Retina XDR display
+            and pro-grade triple camera system. Experience next-gen performance,
+            all-day battery, and sleek iOS 18.
+          </p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-lg font-bold text-indigo-600">Rs.624,499.00</span>
+            <button
+              class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
+          <img
+            src="Img/Samsung S25 Ultra.jpg"
+            alt="product1" 
+            class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
+          />
+          <h3 class="text-xl font-semibold font-gray-800">Samsung S25 Ultra</h3>
+          <p class="text-gray-600 line-clamp-3">
+            Experience cutting-edge AI integration with the Galaxy S25 Ultra's
+            Snapdragon 8 Gen 4 processor. Capture stunning visuals using its
+            200MP quad-camera system and enjoy a vibrant 6.9" AMOLED display.
+            Stay powered with a 5000mAh battery and fast charging capabilities,
+            all within a sleek titanium frame.
+          </p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-lg font-bold text-indigo-600">Rs.509,999.00</span>
+            <button
+              class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
+          <img
+            src="Img/Google Pixel 9 Pro.jpg"
+            alt="product1"
+            class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
+          />
+          <h3 class="text-xl font-semibold font-gray-800">
+            Google Pixel 9 Pro
+          </h3>
+          <p class="text-gray-600 line-clamp-3">
+            Pure Android experience powered by the next-gen Google Tensor G4
+            chip. 6.3" LTPO OLED display and advanced 50MP triple camera setup.
+            Smarter photography, smooth performance, and deep AI integration.
+          </p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-lg font-bold text-indigo-600">Rs.457,000.00</span>
+            <button
+              class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
+          <img
+            src="Img/utopia steam iron.jpg"
+            alt="product1"
+            class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
+          />
+          <h3 class="text-xl font-semibold font-gray-800">Utopia Steam Iron</h3>
+          <p class="text-gray-600 line-clamp-3">
+            Utopia Home Steam Iron for Clothes - Non-Stick Soleplate - 1200W
+            Clothes Iron - Textile Iron 2.3 meter Long Cord Adjustable
+            Thermostat Control, Overheat Safety Protection & Variable Steam
+            Control Blue
+          </p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-lg font-bold text-indigo-600">Rs.15,961.00</span>
+            <button
+              class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
+          <img
+            src="Img/Dawkabc ecibi + X 1.jpg"
+            alt="product1"
+            class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
+          />
+          <h3 class="text-xl font-semibold font-gray-800">
+            Dawlance Econo+ X 1.5 Ton Inverter Split AC
+          </h3>
+          <p class="text-gray-600 line-clamp-3">
+            xperience optimal cooling with the Dawlance Econo+ X 1.5 Ton
+            Inverter Split AC, now available for purchase at Al-Mumtaz. With
+            energy-efficient technology and reliable performance, stay
+            comfortable throughout the seasons.
+          </p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-lg font-bold text-indigo-600">Rs.150,000.00</span>
+            <button
+              class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
+          <img
+            src="Img/mini pedestal fan.jpg"
+            alt="product1"
+            class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
+          />
+          <h3 class="text-xl font-semibold font-gray-800">Mini Pedestal Fan</h3>
+          <p class="text-gray-600 line-clamp-3">
+            Mini Pedestal Fan, Desktop Cooling Fan, Portable Electric Fan, USB
+            Charging Mini Fan
+          </p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="text-lg font-bold text-indigo-600">Rs.1890.00</span>
+            <button
+              class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
             <img
-              src="Img/Product.avif"
+              src="Img/Non stick casseroll pot.jpg"
               alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
+              class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
             />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
+            <h3 class="text-xl font-semibold font-gray-800">
+              KLASSIC Best Non-Stick Casserole
+            </h3>
+            <p class="text-gray-600 line-clamp-3">
+              Non-Stick Surface that is easy to clean while also being able to
+              effortlessly release food. Because of its advanced design there
+              will always be consistent cooking thus yielding best results. The
+              design is robust which makes it last long while adding elegance to
+              your kitchen. The cooking lid is made of tempered glass meaning
+              that cooking can be monitored without losing heat or moisture. It
+              is ideal for heart healthy cooking, only needing a small amount of
+              oil rather than a lot.
+            </p>
             <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <span class="text-lg font-bold text-indigo-600">Rs.2600.00</span>
               <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
               >
                 Add to Cart
               </button>
             </div>
           </div>
 
-          <div class="bg-white p-4 rounded-lg shadows-lg">
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
             <img
-              src="Img/Product.avif"
+              src="Img/Phillips Blender.jpg"
               alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
+              class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
             />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
+            <h3 class="text-xl font-semibold font-gray-800">
+              Phillips Blender
+            </h3>
+            <p class="text-gray-600 line-clamp-3">
+              Turn the toughest ingredients such as frozen fruit and nuts into
+              the finest smoothies with Philips 5000 Series Blender with 1200 W
+              motor. A cleaning setting makes it all effortless from start to
+              finish.
+            </p>
             <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+              <span class="text-lg font-bold text-indigo-600"
+                >Rs.29,490.00</span
               >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
               <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
-              <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
               >
                 Add to Cart
               </button>
@@ -341,18 +313,29 @@
 
 
 
-          <div class="bg-white p-4 rounded-lg shadows-lg">
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
             <img
-              src="Img/Product.avif"
+              src="Img/7-Speed stainless steel Hand MIxer.jpg"
               alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
+              class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
             />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
+            <h3 class="text-xl font-semibold font-gray-800">
+              7-Speed Stainless Steel Hand Mixer
+            </h3>
+            <p class="text-gray-600 line-clamp-3">
+              mixer Model 6610 Power 120W Color Customized Voltage
+              110V-120V/220V- 240V; 50HZ-60HZ Speed 7 Speeds Plug Customized
+              Housing ABS Accessories(Material) 2 Flat beaters, 2 egg beaters
+              and 2 dough hooks. ( stainless steel) Product Features High-Speed
+              Ac Motor Electric Hand Mixer; Efficient cooling system, Safety and
+              durable; Beater ejection button, Easy to release the beaters and
+              hooks; Loading quantity 20Ft/2568pcs, 40GP/5340pcs, 40HQ/6252pcs
+              Function Egg Beating,
+            </p>
             <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+              <span class="text-lg font-bold text-indigo-600">Rs.2200.00</span>
               <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
               >
                 Add to Cart
               </button>
@@ -360,67 +343,147 @@
           </div>
 
 
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+          
+
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+    <img src="Img/earphone.jpg" alt="Earphones" class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300 ">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold">ProSound Earphones</h3>
+      <p class="text-sm text-gray-600">Noise-cancelling, Bluetooth 5.2</p>
+      <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">$129</span>
               <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
               >
                 Add to Cart
               </button>
             </div>
-          </div>
+    </div>
+  </div>
 
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+  
+  <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+    <img src="Img/smart watch.jpg" alt="Smartwatch" class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold">UltraFit Smartwatch</h3>
+      <p class="text-sm text-gray-600">Heart rate, GPS, AMOLED display</p>
+      <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">$129</span>
               <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
               >
                 Add to Cart
               </button>
             </div>
-          </div>
+    </div>
+  </div>
 
-
-          <div class="bg-white p-4 rounded-lg shadows-lg">
-            <img
-              src="Img/Product.avif"
-              alt="product1"
-              class="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 class="text-xl font-semibold font-gray-800">Product Name</h3>
-            <p class="text-gray-600">Product Description</p>
-            <div class="mt-4 flex justify-between items-center">
-              <span class="text-lg font-bold text-indigo-600">Rs.9000</span>
+  
+  <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+    <img src="Img/charger.jfif" alt="Fast Charger" class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold">65W Fast Charger</h3>
+      <p class="text-sm text-gray-600">Type-C, compatible with all devices</p>
+      <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">$129</span>
               <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
               >
                 Add to Cart
               </button>
             </div>
-          </div>
+    </div>
+  </div>
+
+ 
+  <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+    <img src="Img/keyboard.jpg" alt="Keyboard" class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold">MechaX RGB Keyboard</h3>
+      <p class="text-sm text-gray-600">Hot-swappable, RGB backlit</p>
+      <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">$129</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+              >
+                Add to Cart
+              </button>
+            </div>
+    </div>
+  </div>
 
 
+  <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+    <img src="Img/mouse.jpg" alt="Gaming Mouse" class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold">HyperMouse Pro</h3>
+      <p class="text-sm text-gray-600">12,000 DPI, Custom buttons</p>
+      <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">$129</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+              >
+                Add to Cart
+              </button>
+            </div>>
+    </div>
+  </div>
 
+  
+  <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+    <img src="Img/wireless speaker11.jpg" alt="Speaker" class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold">BoomBox Mini</h3>
+      <p class="text-sm text-gray-600">Portable, 10h battery, Bluetooth</p>
+      <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">$129</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+              >
+                Add to Cart
+              </button>
+            </div>
+    </div>
+  </div>
 
-    </section></main>
+  
+  <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+    <img src="Img/webcam.jpg" alt="Webcam" class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold">ClearVision HD Webcam</h3>
+      <p class="text-sm text-gray-600">1080p, Autofocus, Wide Angle</p>
+     <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">$129</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+              >
+                Add to Cart
+              </button>
+            </div>
+    </div>
+  </div>
+</div>
 
-    
-</body>
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+  <img 
+    src="Img/powerbank.jpg" 
+    alt="Portable Power Bank" 
+    class="w-full h-48 object-contain rounded-md mb-4 hover:scale-105 duration-300"
+  >
+  <div class="p-4">
+    <h3 class="text-lg font-semibold">PowerGo 20,000mAh Power Bank</h3>
+    <p class="text-sm text-gray-600">Fast charging USB-C & USB-A, Compact design</p>
+    <div class="mt-4 flex justify-between items-center">
+              <span class="text-lg font-bold text-indigo-600">$129</span>
+              <button
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-300"
+              >
+                Add to Cart
+              </button>
+            </div>
+  </div>
+</div>
+      </section>
+    </main>
+  </body>
 </html>
