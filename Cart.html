@@ -39,13 +39,22 @@
         </ul>
       </nav>
     </header>
-    <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4" >
-        <section id="sc"></section>
+    <main class="container mx-auto mt-8 px-4 py-4" >
+        <h1 class="text-3xl font-bold text-indigo-600 mb-4">Your Cart🛒</h1>
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4" id="sc"></section>
 
     </main>
     <script src="JS/product.js"></script>
     <script src="JS/cart.js"></script>
  </body>
+ <div id="cart-actions" class="p-4 flex justify-end">
+  
+  <p id="total-price" class="mt-4 text-lg font-bold"></p>
+  <button id="checkout-btn" class="bg-indigo-600 text-white py-2 px-6 mx-8 rounded hover:bg-indigo-700 transition">
+    Checkout
+  </button>
+</div>
+
  </html>
  
  
