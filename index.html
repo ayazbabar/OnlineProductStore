@@ -35,7 +35,7 @@
           <li>
             <a href="Product.html" class="hover:text-indigo-600">Products</a>
           </li>
-          <li><a href="#" class="hover:text-indigo-600">Cart🛒</a></li>
+          <li><a href="Cart.html" class="hover:text-indigo-600">Cart🛒</a></li>
         </ul>
       </nav>
     </header>
@@ -86,11 +86,11 @@
         </div>
       </div>
 
-      <section class="mb-12">
+      <section id="section" class="mb-12">
         <h3 class="text-2xl font-bold text-indigo-600 mb-4">Technology</h3>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div class="bg-white p-4 rounded-lg shadows-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
+          <div id="product1" class="bg-white p-4 rounded-lg shadows-lg hover:shadow-xl transition duration-300 hover:cursor-pointer">
             <img
               src="Img/1.webp"
               alt="product1" 
@@ -105,7 +105,7 @@
                 >Rs.407,000.00</span
               >
               <button
-                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
+                onclick="AddtoCart('product1')" class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transform hover:scale-105 transition duration-3000"
               >
                 Add to Cart
               </button>
@@ -430,6 +430,8 @@
       </section>
     </main>
     <footer>Copyright all Rights reseverd</footer>
-    <script src="JS/slider.js"></script>
+   <script src="JS/slider.js"></script>
+   <script src="JS/product.js"></script>
+<script src="JS/cart.js"></script>
   </body>
 </html>
