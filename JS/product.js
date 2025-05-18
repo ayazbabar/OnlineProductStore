@@ -14,7 +14,7 @@ AddtoCart = (productid)=>{
 
     localStorage.setItem("cartItems",JSON.stringify(cartItems));
 
-    window.location.href="Cart.html";
+    alert("item has been added to the cart go to the cart page to checkout");
 
 
 

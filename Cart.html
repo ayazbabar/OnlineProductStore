@@ -1,13 +1,12 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
- </head>
- <body>
+  </head>
+  <body class=" min-h-screen flex flex-col">
     <header class="sticky top-0 z-50 bg-white shadow-md">
       <nav
         class="container mx-auto px-4 py-4 flex justify-between items-center flex-wrap"
@@ -39,24 +38,27 @@
         </ul>
       </nav>
     </header>
-    <main class="container mx-auto mt-8 px-4 py-4" >
-        <h1 class="text-3xl font-bold text-indigo-600 mb-4">Your Cart🛒</h1>
-        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4" id="sc"></section>
-
+    <main class="flex-grow container mx-auto mt-8 px-4 py-4">
+      <h1 class="text-3xl font-bold text-indigo-600 mb-4">Your Cart🛒</h1>
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
+        id="sc"
+      ></section>
+      <div id="cart-actions" class="p-4 flex justify-end">
+        <p id="total-price" class="mt-4 text-lg font-bold"></p>
+        <button
+          id="checkout-btn"
+          class="bg-indigo-600 text-white py-2 px-6 mx-8 rounded hover:bg-indigo-700 transition"
+        >
+          Checkout
+        </button>
+      </div>
     </main>
-    <script src="JS/product.js"></script>
-    <script src="JS/cart.js"></script>
- </body>
- <div id="cart-actions" class="p-4 flex justify-end">
-  
-  <p id="total-price" class="mt-4 text-lg font-bold"></p>
-  <button id="checkout-btn" class="bg-indigo-600 text-white py-2 px-6 mx-8 rounded hover:bg-indigo-700 transition">
-    Checkout
-  </button>
-</div>
+    <footer class="bg-indigo-600 text-center relative bottom-0">
+      Copyright &#169; All Rights Reseverd
+    </footer>
+  </body>
 
- </html>
- 
- 
- 
- 
+  <script src="JS/product.js"></script>
+  <script src="JS/cart.js"></script>
+</html>
