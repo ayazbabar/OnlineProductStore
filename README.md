@@ -35,7 +35,7 @@ Getting Started
 
 bash
 
-git clone https://github.com/yourusername/mystore.git
+git clone https://github.com/ayazbabar/OnlineProductStore.git
 
     Open any of the HTML files in your browser:
 
